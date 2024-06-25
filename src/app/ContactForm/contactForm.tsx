@@ -42,18 +42,19 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-full mx-auto bg-white p-6 rounded-md shadow-md">
+    <div className="max-w- mx-auto bg-white p-6 rounded-md shadow-md">
       <h1 className="text-2xl font-bold mb-4">Contato</h1>
       {error && <div className="text-red-500 mb-4">{error}</div>}
       {success && <div className="text-green-500 mb-4">{success}</div>}
       <form onSubmit={handleSubmit}>
-        <Input
-          label="Nome"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          icon={UserIcon}
-          required
-        />
+      <Input
+            label="Nome"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            icon={UserIcon}
+            required
+            style={{ width: '35vw' }}
+          />
         <Input
           label="E-mail"
           type="email"
