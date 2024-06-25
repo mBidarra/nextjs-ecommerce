@@ -26,7 +26,6 @@ export default async function CartPage() {
           Total: {formatPrice(cart?.subtotal || 0)}
         </p>
         <button className="btn-primary btn sm:w-[200px]">Finalizar compra!</button>
-        //logica com localstorage para atualizar o valor do Total
       </div>
     </div>
   );
