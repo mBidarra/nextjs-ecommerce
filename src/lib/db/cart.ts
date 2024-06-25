@@ -152,3 +152,11 @@ function mergeCartItems(...cartItems: CartItem[][]): CartItem[] {
     return acc;
   }, [] as CartItem[]);
 }
+
+export function applyDiscount(cart: ShoppingCart, discount: number): ShoppingCart {
+  const discountedSubtotal = cart.subtotal * (1 - discount);
+  return {
+    ...cart,
+    subtotal: discountedSubtotal,
+  };
+}

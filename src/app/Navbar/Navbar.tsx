@@ -7,6 +7,7 @@ import { redirect } from "next/navigation";
 import { authOptions } from "../api/auth/[...nextauth]/route";
 import ShoppingCartButton from "./ShoppingCartButton";
 import UserMenuButton from "./UserMenuButton";
+import Breadcrumbs from "@/components/Breadcrumbs"; // Importa o componente Breadcrumbs
 
 async function searchProducts(formData: FormData) {
   "use server";
@@ -27,16 +28,17 @@ export default async function Navbar() {
       <div className="navbar m-auto max-w-7xl flex-col gap-2 sm:flex-row">
         <div className="flex-1">
           <Link href="/" className="btn-ghost btn text-xl normal-case">
-            <Image src={logo} height={40} width={40} alt="Flowmazon logo" />
-            Flowmazon
+            <Image src={logo} height={40} width={40} alt="Barraquinha do Bidarra logo" />
+            Barraquinha do Bidarra
           </Link>
         </div>
+        <Breadcrumbs /> {/* Adiciona o componente Breadcrumbs */}
         <div className="flex-none gap-2">
           <form action={searchProducts}>
             <div className="form-control">
               <input
                 name="searchQuery"
-                placeholder="Search"
+                placeholder="O que deseja comprar?"
                 className="input-bordered input w-full min-w-[100px]"
               />
             </div>

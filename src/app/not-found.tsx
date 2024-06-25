@@ -1,3 +1,3 @@
 export default function NotFoundPage() {
-  return <div>Page not found.</div>;
+  return <div>Ops! Esse pedaço da loja está em manutenção (T_T)</div>;
 }

@@ -54,7 +54,7 @@ export default function ShoppingCartButton({ cart }: ShoppingCartButtonProps) {
               className="btn-primary btn-block btn"
               onClick={closeDropdown}
             >
-              View cart
+              Ver o Carrinho
             </Link>
           </div>
         </div>

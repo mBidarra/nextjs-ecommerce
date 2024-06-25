@@ -47,7 +47,7 @@ export default async function Home({
                 href={"/products/" + products[0].id}
                 className="btn-primary btn"
               >
-                Check it out
+                Eu quero!
               </Link>
             </div>
           </div>
