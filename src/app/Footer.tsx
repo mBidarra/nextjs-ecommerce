@@ -13,7 +13,7 @@ export default function Footer() {
           <Link href="/" className="link link-hover">
             Pagina Principal
           </Link>
-          <Link href="/products" className="link link-hover">
+          <Link href="/teste" className="link link-hover">
             Produtos
           </Link>
           <Link href="/cart" className="link link-hover">
