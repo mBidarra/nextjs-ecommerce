@@ -49,7 +49,7 @@ export default function UserMenuButton({ session }: UserMenuButtonProps) {
               Sign Out
             </button>
           ) : (
-            <button onClick={() => signIn()}>Sign In</button>
+            <button onClick={() => signOut({ callbackUrl: "/login" })}>Sign In</button>
           )}
         </li>
       </ul>
